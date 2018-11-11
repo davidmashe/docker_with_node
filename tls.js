@@ -5,8 +5,8 @@ const app = express();
 const PORT = 443;
 
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/neurocollective.io/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/neurocollective.io/fullchain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/devmeetups.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/devmeetups.com/fullchain.pem')
 };
 
 app.get("/",(req, res) => {
