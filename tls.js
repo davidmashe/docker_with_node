@@ -13,6 +13,6 @@ app.get("/",(req, res) => {
 	res.send(`Hello from ${process.platform}`);
 });
 
-listener = https.createServer(options, app).listen(PORT, () => {
+const listener = https.createServer(options, app).listen(PORT, () => {
     console.log('Express HTTPS server listening on port', PORT);
 });
